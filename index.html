@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quicklist - Lista de Compras</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Logo -->
+    <div class="logo-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="" />
+        <h1 class="logo-text">Quicklist</h1>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <!-- Botão voltar -->
+      <button class="back-button">
+        <span class="back-icon">←</span>
+        <span>Voltar</span>
+      </button>
+
+      <!-- Título -->
+      <h2 class="title">Compras da semana</h2>
+
+      <!-- Formulário de adição -->
+      <div class="add-form">
+        <input
+          type="text"
+          class="add-input"
+          placeholder="Adicione um novo item"
+        />
+        <button class="add-button">Adicionar item</button>
+      </div>
+
+      <!-- Lista de compras -->
+      <div class="shopping-list">
+        <div class="list-item">
+          <div class="item-left">
+            <input type="checkbox" class="item-checkbox" />
+            <span class="item-text">Pão de forma</span>
+          </div>
+          <button class="delete-button">
+            <img src="assets/icon delete.svg" />
+          </button>
+        </div>
+
+        <div class="list-item">
+          <div class="item-left">
+            <input type="checkbox" class="item-checkbox" />
+            <span class="item-text">Café preto</span>
+          </div>
+          <button class="delete-button">
+            <img src="assets/icon delete.svg" />
+          </button>
+        </div>
+
+        <div class="list-item">
+          <div class="item-left">
+            <input type="checkbox" class="item-checkbox" />
+            <span class="item-text">Suco de laranja</span>
+          </div>
+          <button class="delete-button">
+            <img src="assets/icon delete.svg" />
+          </button>
+        </div>
+
+        <div class="list-item">
+          <div class="item-left">
+            <input type="checkbox" class="item-checkbox" />
+            <span class="item-text">Bolacha</span>
+          </div>
+          <button class="delete-button">
+            <img src="assets/icon delete.svg" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Notificação -->
+      <div class="notification">
+        <div class="notification-content">
+          <span class="notification-icon">
+            <img src="assets/Alert.svg" alt="" />
+          </span>
+          <span>O item foi removido da lista</span>
+        </div>
+        <button class="close-button">
+          <img src="assets/delete-small.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
